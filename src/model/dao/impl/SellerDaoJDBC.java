@@ -25,6 +25,7 @@ public class SellerDaoJDBC implements SellerDao {
 	}
 
 	@Override
+	//insere ao banco 
 	public void insert(Seller obj) {
 		PreparedStatement st = null;
 		try {
@@ -64,6 +65,7 @@ public class SellerDaoJDBC implements SellerDao {
 	}
 
 	@Override
+	//atualiza os dados
 	public void update(Seller obj) {
 		PreparedStatement st = null;
 		try {
@@ -88,6 +90,7 @@ public class SellerDaoJDBC implements SellerDao {
 	}
 
 	@Override
+	//deleta o id selecionado
 	public void deleteById(Integer id) {
 		PreparedStatement st = null;
 		try {
@@ -104,6 +107,7 @@ public class SellerDaoJDBC implements SellerDao {
 	}
 
 	@Override
+	//busca o departamento pelo id
 	public Seller findById(Integer id) {
 		PreparedStatement st = null;
 		ResultSet rs = null;
@@ -151,6 +155,7 @@ public class SellerDaoJDBC implements SellerDao {
 	}
 
 	@Override
+	//busca todos os vendedores(Seller)
 	public List<Seller> findAll() {
 		PreparedStatement st = null;
 		ResultSet rs = null;
